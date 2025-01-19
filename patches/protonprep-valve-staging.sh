@@ -347,6 +347,9 @@
     echo "WINE: -CUSTOM- Fix wine bug #56653 - GetLogicalProcessorInformation can be missing Cache information"
     patch -Np1 < ../patches/wine-hotfixes/pending/wine-bug-56653.patch
 
+    echo "WINE: -CUSTOM- Add ntsync support"
+    patch -Np1 < ../patches/proton/ntsync5-staging.patch
+
     popd
 
 ### END PROTON-GE ADDITIONAL CUSTOM PATCHES ###
